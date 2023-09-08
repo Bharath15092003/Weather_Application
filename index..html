@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="styelsheet">
+</head>
+<body>
+    <script src="main.js"></script>
+    <header>
+        <div id="title-container">
+            <img src="https://cdn-icons-png.flaticon.com/128/8218/8218134.png" height="50px" width="50px"alt="logo">
+            <h1> INSTANT WEATHER</h1>
+            <div class="searchbar">
+                <input  id="search-container" type="text" placeholder="Search">
+            </div>
+            <button id="search-img" onclick="searchCity()">
+                <svg  id="simg"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                  </svg>
+            </button>
+        </div>
+    </header>
+     <!-- <video  id="myvideo" autoplay loop muted poster="production_id_5197505 (1080p).mp4">
+        <source src="production_id_5197505 (1080p).mp4" type="video/mp4">
+    </video>  -->
+    <div class="container">
+        <div class="main-container">
+            <h3><span id="city-name"></span> </h3>
+            <h1><span id="temp-at-main"></span>°C</h1>
+            <img id="img-at-main"   alt="weather-img" height="100px" width="100px">
+            <h2><span id="nature-at-main"></span></h2>
+            <h4>Feels like:<span id="feels-at-main"></span>°C</h4>
+        </div>
+        <div class="additional-container">
+            <div class="icons">
+            <img src="humidity.png" height="27px" width="27px" alt="humidity"class="icon">
+            <img src="resilience.png" height="27px" width="27px" alt="humidity"class="icon">
+            <img src="witness.png" height="27px" width="27px" alt="humidity" class="icon">
+            <img src="fever.png" height="27px" width="27px" alt="humidity" class="icon">
+            <img src="low-temperature.png" height="27px" width="30px" alt="humidity"class="icon">
+            </div>
+
+            <div class="info-container">
+                <h2>Weather Today:</h2>
+                <p>Humidity :<span id="humidity-at-info"></span></p>
+                <p>Pressure :<span id="pressure-at-info"></span></p>
+                <p>Visibility:<span id="visibility"></span></p>
+                <p>temperature max:<span id="temp-max"></span>°C</p>
+                <p>temperature min:<span id="temp-min"></span>°C</p>
+            </div>
+
+            <div class="wicons">
+                <img src="wind.png" height="27px" width="27px" alt="humidity"class="wicon">
+                <img src="360-degrees.png" height="27px" width="27px" alt="humidity"class="wicon">
+                <img src="compass direction.png" height="27px" width="27px" alt="humidity" class="wicon">
+                </div>
+
+            <div class="wind-container">
+                <h2>Wind Details:</h2>
+                <p> Wind Speed:<span id="wind-speed"></span></p>
+                <p>Degrees:<span id="wind-degrees"></span>°</p>
+                <p>Wind Direction:</p>
+                <img id="compassneedle" src="compass-removebg-preview.png" height="80px" width="80px" alt="compass">
+            </div>
+    
+        </div>
+    </div>
+    
+    <div class="predictions">
+        <button class="left-buttton" onclick="scrollR()">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
+                <path d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0zm3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z"/>
+              </svg>
+        </button>
+        <div class="future">
+             <div class="nextday">
+                <p><span id="time"></span></p>
+                <img  class="pic" alt="weather-img">
+                <div class="future-container">
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+             </div>
+             <div class="nextday">
+                <p ><span id="time"></span></p>
+                <img class="pic" alt="weather-img">
+                <div class="future-container" >
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+                
+             </div>
+             <div class="nextday">
+                <p ><span id="time"></span></p>
+                <img  class="pic" alt="weather-img">
+                <div class="future-container" >
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+            </div>
+             <div class="nextday">
+                <p ><span id="time"></span></p>
+                <img  class="pic" alt="weather-img">
+                <div class="future-container" >
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+                
+             </div>
+             <div class="nextday">
+                <p ><span id="time"></span></p>
+                <img class="pic" alt="weather-img">
+                <div class="future-container">
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+                
+             </div>
+             <div class="nextday" >
+                <p ><span id="time"></span></p>
+                <img  class="pic" alt="weather-img">
+                <div class="future-container">
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+                
+             </div>
+             <div class="nextday">
+                <p ><span id="time"></span></p>
+                <img class="pic" alt="weather-img">
+                <div class="future-container">
+                    <h1></h1>
+                    <h3></h3>
+                </div>
+             </div> 
+       </div>
+       <button class="right-button" onclick="scrollL()">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="35" height="45" fill="currentColor" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+          </svg>
+        </button>
+    </div>
+</body>
+</html>

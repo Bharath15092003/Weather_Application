@@ -1,0 +1,214 @@
+#title-container{
+    display: flex;
+    background-color:rgb(253, 238, 213);
+    align-items: center;
+}
+.searchbar{
+    margin-left: 400px;
+    
+}
+#search-container{
+    height:35px;
+    width:480px;
+    font-size: 18px;
+    border-radius: 30px;
+}
+#search-img{
+    background-color:transparent; 
+    border: none;
+}
+#simg:hover{
+    height: 20px;
+    width:20px;
+}
+/* #myvideo{
+   
+    height: 100%;
+    width: 100%;
+   
+} */
+body{
+    /* background-image: url('Capture3.PNG'); */
+    background-image: linear-gradient(to top, #767f82, #799097, #7aa1ab, #7ab3c0, #78c5d4, #7cccd9, #80d3de, #85dae2, #91d7da, #9dd4d4, #a7d1ce, #b0ceca);
+    background-repeat: no-repeat;
+    background-size: 1708px 900px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body > header{
+    margin-top: 0px;
+}
+.container{
+    /*margin-top: -800px;*/
+    display: flex;
+    justify-content: center;
+}
+.main-container{
+    background-color:#bedce0;
+    height: 330px;
+    width: 34%;
+    background-image: linear-gradient(to right top, #d0fcce, #c3fbd8, #b9f9e1, #b3f6ea, #b1f3f1, #b2edef, #b4e8ec, #b6e2e8, #b8d9dd, #c5e3e3, #b9d5d5, #bddddd);
+    border-radius: 20px;
+    border-style:inset;
+    border-width: 7px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main-container > img{
+ margin-right: 330px;
+ margin-top: -135px;
+}
+.main-container > h1{
+   font-size: 55px;
+   margin-top:30px;
+}
+.main-container > h3{
+    font-size: 35px;
+}
+.main-container > h2{
+    font-size: 23px;
+    margin-left: -320px;
+    margin-top: 0%;
+}
+.main-container > h4{
+    font-size: 23px;
+    margin-top: 40px;
+
+}
+.additional-container{
+    background-image: linear-gradient(to right top, #d49198, #d295af, #c89cc6, #b5a5d8, #9cb0e4, #87b8eb, #6fc1ed, #5ac8e9, #43d0e5, #35d6dc, #3bdccf, #52e1be);
+    border-color: rgb(104, 98, 98);
+    border-radius: 20px;
+    border-style: dashed;
+    border-width: 4px;
+    width: 48%;
+    height: 330px;
+    margin-top: 40px;
+    margin-left:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+
+}
+.icons{
+     display: flex;
+     flex-direction: column;
+     margin-bottom: -55px;
+     margin-left: 30px;
+}
+.icon{
+    margin-top: 15px;
+}
+.wicons{
+    display: flex;
+    flex-direction: column;
+    margin-left:40px;
+    margin-bottom: 10px;
+}
+.wicon{
+    margin-bottom: 15px;
+}
+.info-container{
+    height:75%;
+    width: 30%;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+}
+.info-container>h2{
+    margin-left: -40px;
+}
+.wind-container>h2{
+    margin-left: -40px;
+}
+
+.wind-container{
+    height:75%;
+    width: 30%;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+}
+#compassneedle{
+    height: 38%;
+    width: 44%;
+    margin-left: 30px;
+}
+.future{
+    height: 200px;
+    width:80%;
+    background-image: url("Capture3.PNG");
+   /* margin-left: 90px;*/ 
+    margin-top: 30px; 
+    display: flex;
+    align-items: center;
+    overflow-x:scroll;
+    border-radius: 10px;   
+}
+.future::-webkit-scrollbar{
+    display: none;
+}
+
+.nextday{
+   background-color: rgb(253, 70, 70);
+   height:140px;
+   width: 250px;
+   margin-right:15px ;
+   margin-left: 15px;
+   border-radius: 10px;
+   border-style:outset;
+   border-color: rgb(255, 1, 1);
+   border-width: 10px;
+   
+}
+.nextday:hover{   
+ width: 260px;
+ height:152px;
+ border-color: rgb(0, 0, 0);
+}
+.nextday>p{
+    font-size: 18px;
+    font-style:normal;
+    font-weight: 700;
+}
+.pic{
+    height: 90px;
+    width:90px;
+    
+}
+.future-container{
+    margin-left: 130px;
+    margin-top:-130px;
+    height:140px ;
+    width: 100px;
+    
+}
+.predictions{
+    margin-left: 55px;
+    margin-top: 10px;
+   /* background-color: aquamarine;*/ 
+    height: 250px;
+    width: 90%;
+    display: flex;
+
+}
+
+.left-buttton{
+    margin-left:80px;
+    height: 50px;
+    background-color:transparent;
+    border: transparent;
+    margin-top: 100px;
+}
+.right-button{
+    height: 50px;
+    background-color: transparent;
+    border: transparent;
+    margin-top: 100px;
+}
+
