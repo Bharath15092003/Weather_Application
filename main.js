@@ -1,4 +1,4 @@
-fetch("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=adc711dab7ec51eca210793f032dba96")
+fetch("https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=<api-key>")
 .then((res)=> res.json())
 .then((data)=> {
     console.log(data);
@@ -29,7 +29,7 @@ function putdata(data){
 }
 
 function getforecast(gap){
-    var forecasturl='https://api.openweathermap.org/data/2.5/forecast?q='+gap.name+'&appid=adc711dab7ec51eca210793f032dba96';
+    var forecasturl='https://api.openweathermap.org/data/2.5/forecast?q='+gap.name+'&appid=<api-key>';
     fetch(forecasturl).then((res)=>res.json()).then((forecastdata) => {
         console.log(forecastdata);
         putforecastdata(forecastdata);
